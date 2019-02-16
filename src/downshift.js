@@ -795,6 +795,7 @@ class Downshift extends Component {
     this.internalSetState({
       type: stateChangeTypes.changeInput,
       isOpen: true,
+      highlightedIndex: this.defaultHighlightedIndex,
       inputValue: isReactNative
         ? /* istanbul ignore next (react-native) */ event.nativeEvent.text
         : event.target.value,
